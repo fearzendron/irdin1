@@ -1,0 +1,31 @@
+.arrow {
+    color: #ffffff;
+    display: inline-block;
+    font-family: 'Ubuntu';
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 0;
+    text-decoration: none;
+    text-indent: 40px;
+    width: 120px;
+    padding: 0 8px;
+    z-index: 1;
+	text-align: center;
+}
+.arrow:before, .arrow:after {
+    
+		background-color:hsla(305, 100%, 19%, 0.1);
+    content: "";
+    display: block;
+    height: .8em; 
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+.left.arrow:before {
+    transform: skewX(-40deg);
+}
+.left.arrow:after {
+    transform: skewX(40deg);
+}

@@ -1,0 +1,23 @@
+.numMenu{
+	list-style:none;
+	margin:0;
+	padding:0;
+	text-align:center;
+	font-family: Futurabc;
+	color:#551A8B;
+	font-size:28px;
+}
+
+.numMenu li{
+	display:inline;
+}
+
+.numMenu a{
+	display:inline-block;
+	padding:8px;
+}
+
+a:link {text-decoration: none; color: #33469D;}
+a:visited {text-decoration: none; color: #33469D;}
+a:hover {text-decoration: none; color: #CCBECF;}
+a:active {text-decoration: none; color: #33469D;}

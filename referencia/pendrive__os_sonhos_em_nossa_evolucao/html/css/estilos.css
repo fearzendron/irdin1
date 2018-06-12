@@ -1,0 +1,93 @@
+body { 
+	background-color: #FFFFFF;
+	color: #551A8B;
+	font-family: Verdana, Tahoma, Arial;
+	
+ }
+ 
+.bodyIndex {
+	color: #551A8B;
+	font-family: Verdana, Tahoma, Arial;
+	line-height: 28px;
+}
+
+img { border-style: none; }
+
+a {text-decoration: none; }
+
+.voltar {
+    float: left;
+    border: transparent thin solid;
+    padding: 5px;
+    margin: 0px 10px 10px 0;
+    max-width: 186px;
+	border-style: none;
+}
+
+.tituloIndex {
+	font-size:40px;
+}
+
+.subTituloIndex	{
+	font-size:30px;
+}
+
+.sizeMainTitle {
+	font-size:40px;
+}
+
+.subTituloReinos {
+	font-size:25px;
+}
+
+.subTituloInfoTecnicas {
+	font-size:25px;
+}
+
+.tituloAudioFull {
+	font-size:20px;
+}
+
+.tituloTempoAudioFull {
+	font-size:14px;
+}
+
+#one td {
+    border: 2px solid #551A8B; 
+	-moz-border-radius:6px;
+	border-radius: 6px;
+}
+
+.imgCtrlf{
+	font-size:10px;
+}
+
+.msgImagem {
+	font-size:14px;
+}
+
+.msgPesquisa {
+	font-size:7px;
+}
+
+.txtSobreAIrdin {
+	font-size:14px;
+}
+
+a:link {
+	color:#DF3A01;
+	text-decoration:underline;
+}
+a:visited {
+	color:#551A8B;
+	text-decoration:underline;
+}
+a:hover {
+	color:#08088A;
+	text-decoration:underline;
+}
+a:active {
+	color:#551A8B;
+	text-decoration:underline;
+}
+

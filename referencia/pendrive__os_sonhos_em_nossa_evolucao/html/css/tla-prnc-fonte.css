@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Sansation_Regular';
+  src: url('../font/sansation/Sansation_Regular.eot'); /* IE9 Compat Modes */
+  src: url('../font/sansation/Sansation_Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/sansation/Sansation_Regular.woff') format('woff'), /* Modern Browsers */
+       url('../font/sansation/Sansation_Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../font/sansation/Sansation_Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url('../font/ubuntu/Ubuntu-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../font/ubuntu/Ubuntu-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/ubuntu/Ubuntu-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/ubuntu/Ubuntu-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../font/ubuntu/Ubuntu-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../font/ubuntu/Ubuntu-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Matura MT Script Capitals';
+  src: url('../font/matura/maturasc.eot'); /* IE9 Compat Modes */
+  src: url('../font/matura/maturasc.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/matura/maturasc.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/matura/maturasc.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../font/matura/maturasc.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../font/matura/maturasc.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Copperplate Gothic Bold';
+  src: url('../font/cooperplate/COPRGTB.eot'); /* IE9 Compat Modes */
+  src: url('../font/cooperplate/COPRGTB.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/cooperplate/COPRGTB.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/cooperplate/COPRGTB.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../font/cooperplate/COPRGTB.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../font/cooperplate/COPRGTB.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: Futurabc;
+  src: url('../font/futura/Futurabc.eot'); /* IE9 Compat Modes */
+  src: url('../font/futura/Futurabc.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/futura/Futurabc.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/futura/Futurabc.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../font/futura/Futurabc.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../font/futura/Futurabc.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<title>Os Sonhos em Nossa Evolu&ccedil;&atilde; - Trigueirinho - Introdu&ccedil;&atilde;o para Buscando Compreender os Sonhos</title>
+
+		<link rel="icon" href="./html/img/irdin.ico" type="image/x-icon" />
+		
+		<!-- CSS DO MENU -->
+		<link href="../css/menu/botaoVoltar.css" rel="stylesheet" type="text/css">
+		<link href="../css/tla-prnc-fonte.css" rel="stylesheet" type="text/css">
+		
+		<style type="text/css">
+		
+		#one td {
+			border: 1px solid #d9d9d9; 
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+		}
+		
+		.dezesseis {
+		  display: -webkit-flex;
+		  display: flex;
+		  -webkit-align-items: center;
+		  align-items: center;
+		  -webkit-justify-content: center;
+		  justify-content: center;
+		  padding:0px;
+		  text-align:right;
+		  color:#FFF;
+		  -moz-border-radius:7px;
+		  -webkit-border-radius:7px;
+		  border-radius:7px;
+		  background-color:hsla(278, 100%, 50%, 0.1);
+		}	
+		
+		.numMenu{
+			list-style:none;
+			margin:0;
+			padding:0;
+			text-align:center;
+			font-family: Futurabc;
+			color:#551A8B;
+			font-size:28px;
+		}
+		
+		.numMenu li{
+			display:inline;
+		}
+		
+		.numMenu a{
+			display:inline-block;
+			padding:8px;
+		}
+		
+		a:link {text-decoration: none; color: #33469D;}
+		a:visited {text-decoration: none; color: #33469D;}
+		a:hover {text-decoration: none; color: #CCBECF;}
+		a:active {text-decoration: none; color: #33469D;}
+		
+
+		.titulo {
+			font-family: Ubuntu;
+			letter-spacing: 0.05em;
+			color:#551A8B;
+			font-size:25px;
+		}
+	</style>
+	<style type="text/css">
+
+		p {
+			margin: 1em 0;
+		}
+
+		.ui-layout-pane { 
+			background:	#F7F5EF; 
+			border:		1px solid #F00; 
+			padding:	2px; 
+			overflow:	auto;
+		} 
+		.ui-layout-resizer {
+			background:	#DDD; 
+		} 
+		.ui-layout-toggler {
+			background:	#AAA; 
+		}
+	</style>
+
+	<style type="text/css" media="print">
+		html, body {
+			/* NEUTRALIZE 'layout container' styles */
+
+			font-family: Ubuntu;
+		}
+		.ui-layout-pane ,
+		.ui-layout-resizer ,
+		.ui-layout-toggler {
+			/* NEUTRALIZE 'layout element' styles */
+			display:	none		!important; /* hide ALL by default */
+			position:	relative	!important;
+			top:		auto		!important;
+			bottom:		auto		!important;
+			left:		auto		!important;
+			right:		auto		!important;
+			width:		auto		!important;
+			height:		auto		!important;
+			overflow:	visible		!important;
+		}
+
+		.ui-layout-pane-north ,
+		.ui-layout-pane-south ,
+		.ui-layout-pane-east ,
+		.ui-layout-pane-center {
+			display:	block		!important;
+			/* OPTIONAL: change cosmetic styles as desired
+			border:		0			!important;
+			padding:	0			!important;
+			background:	transparent	!important;
+			*/
+		}
+
+		.ui-layout-pane-east {
+			float:			right;
+			width:			25%			!important;
+			margin-left:	1em			!important;
+			margin-bottom:	1ex			!important;
+		}
+	</style>
+
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/jquery.ui.all.js"></script>
+	<script type="text/javascript" src="../js/jquery.layout.js"></script>
+	<script type="text/javascript" src="../js/jwplayer.js"></script>
+	<script type="text/javascript" src="./js/FitText/jquery.fittext.js"></script>
+
+	<script type="text/javascript">
+		function highlightNext(element, color) {
+			var next = element;
+			do { // find next td node
+				next = next.nextSibling;
+			}
+			while (next && !('nodeName' in next && next.nodeName === 'TD'));
+			if (next) {
+				next.style.color = color;
+			}
+		}
+		
+		// Função para mudar a cor do fundo dos menus ao passar o mouse
+		function highlightBG(element, color) {
+			element.style.backgroundColor = color;
+		}
+		
+		// Função para criar o layout
+		$(document).ready(function () {
+			$('body').layout();
+		});
+		
+		var myLayout; // a var is required because this page utilizes: myLayout.allowOverflow() method
+
+		$(document).ready(function () {
+
+			myLayout = $('body').layout({
+				west__size:					150
+			,	west__spacing_closed:		20
+			,	west__togglerLength_closed:	100
+			,	west__togglerAlign_closed:	"top"
+			,	west__togglerContent_closed:"M<BR>E<BR>N<BR>U"
+			,	west__togglerTip_closed:	"Open & Pin Menu"
+			,	west__sliderTip:			"Slide Open Menu"
+			,	west__slideTrigger_open:	"mouseover"
+			,	center__maskContents:		true // IMPORTANT - enable iframe masking
+			});
+
+		});
+	</script>
+
+</head>
+<body bgcolor="#F7F5EF">
+
+<iframe id="mainFrame" name="mainFrame" class="ui-layout-center"
+	width="100%" height="600" frameborder="0" scrolling="auto"
+	src="bca_centro.html"></iframe>
+
+<div class="ui-layout-north">
+	
+<table border="0" align="center" width="100%">
+<tr>
+	<td width="12%">
+		<table border="0" align="center" width="100%">
+			<tr>
+				<td align="right" width="100%">
+				<a class="left arrow" href="../../CLIQUE_AQUI_PARA_INICIAR.HTML">Voltar</a>
+				</td>
+			</tr>
+		</table>
+	</td>
+
+	<td width="78%">
+		<table border="0" align="center" width="100%">
+			<tr>
+				<td align="center" width="100%">
+					<div align="center" class="titulo"><b>Buscando Compreender os Sonhos</b></div>
+					<ul class="numMenu">
+					<li><a target="mainFrame" href="BCA1000.html">1</a></li><li><a target="mainFrame" href="BCA2000.html">2</a></li><li><a target="mainFrame" href="BCA3000.html">3</a></li><li><a target="mainFrame" href="BCA4000.html">4</a></li><li><a target="mainFrame" href="BCA5000.html">5</a></li><li><a target="mainFrame" href="BCA6000.html">6</a></li><li><a target="mainFrame" href="BCA7000.html">7</a></li><li><a target="mainFrame" href="BCA8000.html">8</a></li><li><a target="mainFrame" href="BCA9000.html">9</a></li><li><a target="mainFrame" href="BCA10000.html">10</a></li><li><a target="mainFrame" href="BCA11000.html">11</a></li><li><a target="mainFrame" href="BCA12000.html">12</a></li><li><a target="mainFrame" href="BCA13000.html">13</a></li><li><a target="mainFrame" href="BCA14000.html">14</a></li><li><a target="mainFrame" href="BCA15000.html">15</a></li><li><a target="mainFrame" href="BCA16000.html">16</a></li><li><a target="mainFrame" href="BCA17000.html">17</a></li><li><a target="mainFrame" href="BCA18000.html">18</a></li><li><a target="mainFrame" href="BCA19000.html">19</a></li><li><a target="mainFrame" href="BCA20000.html">20</a></li><li><a target="mainFrame" href="BCA21000.html">21</a></li><li><a target="mainFrame" href="BCA22000.html">22</a></li><li><a target="mainFrame" href="BCA23000.html">23</a></li><li><a target="mainFrame" href="BCA24000.html">24</a></li><li><a target="mainFrame" href="BCA25000.html">25</a></li><li><a target="mainFrame" href="BCA26000.html">26</a></li><li><a target="mainFrame" href="BCA27000.html">27</a></li><li><a target="mainFrame" href="BCA28000.html">28</a></li><li><a target="mainFrame" href="BCA29000.html">29</a></li>					</ul>
+					<font face="ubuntu" COLOR="#551A8B" style="letter-spacing: 0.1em; LINE-HEIGHT: 0.35em; font-size:0.9em;">
+					Clique nos n&uacute;meros acima para ouvir as grava&ccedil;&otilde;es e suas respectivas faixas.
+					</font>
+				</td>
+			</tr>
+		</table>
+	</td>
+
+	<td width="12%">
+		<table border="0" width="100%">
+			<tr>
+				<td align="left" width="100%">
+					<a href="http://www.irdin.org.br/site/quemsomos/" target="_blank">
+						<font face="Matura MT Script Capitals" style="font-size: 2.9em;">I</font>
+						<font face="Copperplate Gothic Bold" style="font-size: 1.7em;">RDIN</font>
+					</a>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</div>
+
+<div class="ui-layout-west">
+	<table border="1" width="80" align="center">
+		<tr>
+			<td width="100%" align="center">
+				<a href="../Guia_de_audios_e_sonhos.html" target="mainFrame">
+					<font style="font-family: Ubuntu; font-size:0.8em; letter-spacing: 0.1em; LINE-HEIGHT: 0.35em;">
+					Guia de audios e sonhos
+					</font>
+				</a>
+			</td>
+		</tr>
+	</table>
+</div>
+
+<div class="ui-layout-east">
+</div>
+
+<div class="ui-layout-center">
+
+</div>
+
+<div class="ui-layout-south">
+
+
+</div>
+
+</body>
+</html>
+

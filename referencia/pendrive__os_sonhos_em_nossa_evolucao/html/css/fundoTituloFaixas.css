@@ -1,0 +1,33 @@
+.fundoFaixas {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	padding:0px;
+	text-align:justify;
+	color:#551A8B;
+	font-weight:bold;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+	background-color:hsla(305, 100%, 19%, 0.1);
+}
+
+.fundoTitulo {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	padding:0px;
+	text-align:justify;
+	color:#551A8B;
+	font-weight:bold;	
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+	background-color:hsla(305, 100%, 19%, 0.1);
+}

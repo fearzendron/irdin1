@@ -1,6 +1,24 @@
+.color_title_darkblue {
+  color: #00141a;
+}
+
+.color_title_blue {
+  color: #00ccff;
+}
+
+.background_section {
+  background-color: #f7ffe6;
+}
+
+.bottom_logo {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+}
+
+
 /*
-
-
+Fonts
 */
 
 @font-face {

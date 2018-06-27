@@ -17,6 +17,14 @@
 }
 
 
+.search-box {
+  width: 260px;
+  height: 35px;
+  font-size: 15px;
+  text-indent: 10px;
+}
+
+
 /*
 Fonts
 */

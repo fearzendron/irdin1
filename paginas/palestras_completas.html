@@ -44,21 +44,6 @@
 		audiojs.events.ready(function() {
 			var as = audiojs.createAll();
 		});
-
-		var audio1 = {
-			"year":"1988",
-			"description":"A condição natural da humanidade e sua necessidade de cura. Nosso papel nessa circunstância ",
-			"keywords":"cura"
-		}
-
-  		var searchElastic = elasticlunr(function () {
-			this.addField('year');
-			this.addField('description');
-			this.addField('keywords');
-			this.setRef('id');
-		});
-
-		searchElastic.addDoc(audio1);
 	</script>
 
 	</head>
@@ -107,13 +92,18 @@
 
 			<section class="colorlib-education background_section" data-section="palestrascompletas">
 				<div class="colorlib-narrow-content">
-					<div class="row">
+					<div class="row title-main">
 						<div class="col-md-12 col-md-offset-3 col-md-pull-3 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
 							<h2 class="colorlib-heading animate-box fadeInUp animated">PARTILHAS COMPLETAS SELECIONADAS</h2>
 						</div>
+
+					</div>
+					<div class="row">
 						<div>
-							<div class="col-md-2 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
-								<input type="text" id="readonly-ip" name="ip-readonly" class="search-box" placeholder="Buscar"  />
+							<div class="col-md-12 animate-box fadeInLeft animated search-box-div" data-animate-effect="fadeInLeft">
+								<input type="text" id="search-input" name="search-input" class="search-box" placeholder="digite a palavra aqui ..."  />
+								<input type="button" id="search-offline" name="search-offline" class="search-offline" value="Buscar"  />
+								<input type="button" id="clean-offline" name="clean-offline" class="clean-offline" value="Limpar Busca"  />
 							</div>
 						</div>
 
@@ -123,7 +113,7 @@
 						<div class="col-md-12">
 				         <div class="timeline-centered">
 					         
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c001">
 					            <div class="timeline-entry-inner">
 
 					               <div class="timeline-icon color-10">
@@ -141,7 +131,7 @@
 					         </article>
 
 
-					         <article class="timeline-entry animate-box fadeInRight animated" data-animate-effect="fadeInRight">
+					         <article class="timeline-entry animate-box fadeInRight animated" data-animate-effect="fadeInRight" id="c002">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>1988</span>
@@ -156,7 +146,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c003">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>1988</span>
@@ -171,7 +161,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInUp animated" data-animate-effect="fadeInTop">
+					         <article class="timeline-entry animate-box fadeInUp animated" data-animate-effect="fadeInTop" id="c004">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>1988</span>
@@ -186,7 +176,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c005">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>1988</span>
@@ -201,7 +191,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c006">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>1988</span>
@@ -216,7 +206,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c007">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>1988</span>
@@ -231,7 +221,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c008">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>1983</span>
@@ -246,7 +236,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c009">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2000</span>
@@ -261,7 +251,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c010">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>1988</span>
@@ -277,7 +267,7 @@
 					         </article>
 
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c011">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2001</span>
@@ -292,7 +282,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c012">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2000</span>
@@ -307,7 +297,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c013">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2001</span>
@@ -322,7 +312,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c014">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2001</span>
@@ -337,7 +327,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c015">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>1989</span>
@@ -352,7 +342,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c016">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>1989</span>
@@ -367,7 +357,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c017">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2002</span>
@@ -382,7 +372,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c018">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2008</span>
@@ -397,7 +387,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c019">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2005</span>
@@ -412,7 +402,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c020">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2002</span>
@@ -427,7 +417,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c021">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2001</span>
@@ -442,7 +432,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c022">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2004</span>
@@ -457,7 +447,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c023">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2002</span>
@@ -472,7 +462,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c024">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2004</span>
@@ -487,7 +477,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c025">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2002</span>
@@ -502,7 +492,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c026">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2002</span>
@@ -517,7 +507,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c027">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2002</span>
@@ -532,7 +522,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c028">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2004</span>
@@ -547,7 +537,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c029">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2004</span>
@@ -562,7 +552,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c030">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2007</span>
@@ -577,7 +567,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c031">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2004</span>
@@ -592,7 +582,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" id="c032">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2013</span>
@@ -637,10 +627,28 @@
 	<script src="../js/owl.carousel.min.js"></script>
 	<!-- Counters -->
 	<script src="../js/jquery.countTo.js"></script>
+	<!-- Offline search -->
+	<script src="../js/partilhascompletas.js"></script>
 	
 	
 	<!-- MAIN JS -->
 	<script src="../js/main.js"></script>
+
+	<script>
+		$("#search-offline").click(function(e) {
+		  var word = $("#search-input").val().trim();
+
+		  if(word === "") {
+		  	alert("nope");
+		  } else {
+			alert(idx.search(word));
+		  }
+		});
+
+		$("#clean-offline").click(function(e) {
+		  alert("limpar busca");
+		});
+	</script>
 
 	</body>
 </html>

@@ -24,6 +24,26 @@
   text-indent: 10px;
 }
 
+.search-box-div {
+  margin-left: 70px;
+  margin-bottom: 35px;
+}
+
+.search-offline {
+    width: 100px;
+    position: relative;
+    top: 0px;
+    height: 34px;
+}
+
+.clean-offline {
+    width: 150px;
+    position: relative;
+    top: 0px;
+    height: 34px;
+    margin-left: 20px;
+}
+
 
 /*
 Fonts

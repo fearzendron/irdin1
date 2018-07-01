@@ -1,0 +1,79 @@
+.color_title_darkblue {
+  color: #00141a;
+}
+
+.color_title_blue {
+  color: #00ccff;
+}
+
+.background_section {
+  background-color: #f7ffe6;
+}
+
+.bottom_logo {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+}
+
+
+.search-box {
+  width: 260px;
+  height: 35px;
+  font-size: 15px;
+  text-indent: 10px;
+}
+
+
+/*
+Fonts
+*/
+
+@font-face {
+  font-family: 'Sansation_Regular';
+  src: url('../fonts/sansation/Sansation_Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/sansation/Sansation_Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/sansation/Sansation_Regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/sansation/Sansation_Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/sansation/Sansation_Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url('../fonts/ubuntu/Ubuntu-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/ubuntu/Ubuntu-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/ubuntu/Ubuntu-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/ubuntu/Ubuntu-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/ubuntu/Ubuntu-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/ubuntu/Ubuntu-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Matura MT Script Capitals';
+  src: url('../fonts/matura/maturasc.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/matura/maturasc.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/matura/maturasc.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/matura/maturasc.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/matura/maturasc.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/matura/maturasc.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Copperplate Gothic Bold';
+  src: url('../fonts/cooperplate/COPRGTB.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/cooperplate/COPRGTB.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/cooperplate/COPRGTB.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/cooperplate/COPRGTB.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/cooperplate/COPRGTB.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/cooperplate/COPRGTB.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: Futurabc;
+  src: url('../fonts/futura/Futurabc.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/futura/Futurabc.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/futura/Futurabc.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/futura/Futurabc.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/futura/Futurabc.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/futura/Futurabc.svg#svgFontName') format('svg'); /* Legacy iOS */
+}

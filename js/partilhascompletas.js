@@ -223,7 +223,7 @@ var doc32 = {
 };
 
 var idx = elasticlunr(function () {
-		this.addField('title');
+	this.addField('title');
 	this.addField('description');
 	this.addField('keywords');
 	this.setRef('id');

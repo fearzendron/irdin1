@@ -637,16 +637,31 @@
 	<script>
 		$("#search-offline").click(function(e) {
 		  var word = $("#search-input").val().trim();
+		  var i = 0;
 
 		  if(word === "") {
 		  	alert("nope");
 		  } else {
-			alert(idx.search(word));
+			
+			$("article").each(
+			   function() {
+			      $("#" + this.id).hide();
+			   }
+			);
+
+		  	result = idx.search(word);
+			for(i = 0; i<result.length -1;i++) { 	
+				$("#" + result[i].ref).show();
+			}
 		  }
 		});
 
 		$("#clean-offline").click(function(e) {
-		  alert("limpar busca");
+  			$("article").each(
+			   function() {
+			      $("#" + this.id).show();
+			   }
+			);
 		});
 	</script>
 

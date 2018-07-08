@@ -30,6 +30,7 @@
 	<!-- Modernizr JS -->
 	<script src="../js/modernizr-2.6.2.min.js"></script>
 	<script src="../js/audio.min.js"></script>
+	<script src="../js/elasticlunr.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -39,9 +40,9 @@
 	<link rel="stylesheet" href="../css/style.css">
 
 	<script>
-	  audiojs.events.ready(function() {
-	    var as = audiojs.createAll();
-	  });
+		audiojs.events.ready(function() {
+			var as = audiojs.createAll();
+		});
 	</script>
 
 	</head>
@@ -68,30 +69,30 @@
 				<nav id="colorlib-main-menu" role="navigation" class="navbar">
 					<div id="navbar" class="collapse">
 						<ul>
-							<li ><a href="../index.html">Inicio</a></li>
-							<li class="active"><a href="destaques_especiais.html">Destaques Especiais</a></li>
-							<li><a href="antologia_assuntos.html">Antologia por assunto</a></li>
-							<li><a href="palestras_completas.html">Palestras Completas Selecionadas</a></li>
-						</ul>
-					</div>
-				</nav>
-			</div>
-
-			<div>
-				<nav id="colorlib-main-menu" role="navigation" class="navbar">
-					<div id="navbar" class="collapse">
-						<ul>
+							<li>
+								<a href="../index.html">
+									Inicio
+								</a>
+							</li>
 							<li class="active">
-								<input type="text" id="readonly-ip" name="ip-readonly" class="search-box" placeholder="Buscar"  />
-								<input type="button" id="search-offline" name="search-offline" class="search-offline" placeholder="Buscar"  />
+								<a href="../paginas/destaques_especiais.html" target="_self">
+									Destaques Especiais
+								</a>
+							</li>
+							<li>
+								<a href="../paginas/antologia_assuntos.html">
+									Antologia por assunto
+								</a>
+							</li>
+							<li>
+								<a href="../paginas/palestras_completas.html">
+									Palestras Completas Selecionadas
+								</a>
 							</li>
 						</ul>
 					</div>
 				</nav>
 			</div>
-
-						
-
 
 			<div class="bottom_logo">
 		        <a href="http://www.irdin.org.br/site/quemsomos/" target="_blank">
@@ -107,14 +108,26 @@
 			<section class="colorlib-education background_section" data-section="destaquesespeciais">
 				<div class="colorlib-narrow-content">
 					<div class="row">
-						<div class="col-md-12 col-md-offset-3 col-md-pull-3 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
-							<h2 class="colorlib-heading animate-box fadeInUp animated">DESTAQUES ESPECIAIS</h2>
+						<div class="col-md-12 col-md-offset-3 col-md-pull-3   fadeInLeft animated" data-animate-effect="fadeInLeft">
+							<h2 class="colorlib-heading   fadeInUp animated">DESTAQUES ESPECIAIS</h2>
 						</div>
 					</div>
+
+					<div class="row">
+						<div>
+							<div class="col-md-12 fadeInLeft animated search-box-div" data-animate-effect="fadeInLeft">
+								<input type="text" id="search-input" name="search-input" class="search-box" placeholder="digite a palavra aqui ..."  />
+								<input type="button" id="search-offline" name="search-offline" class="search-offline" value="Buscar"  />
+								<input type="button" id="clean-offline" name="clean-offline" class="clean-offline" value="Limpar Busca"  />
+							</div>
+						</div>
+
+					</div>
+
 					<div class="row">
 						<div class="col-md-12">
 				         <div class="timeline-centered" id="lista-audio">
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry   fadeInLeft animated" data-animate-effect="fadeInLeft" id="DA168">
 					            <div class="timeline-entry-inner">
 
 					               <div class="timeline-icon color-10">
@@ -132,7 +145,7 @@
 					         </article>
 
 
-					         <article class="timeline-entry animate-box fadeInRight animated" data-animate-effect="fadeInRight">
+					         <article class="timeline-entry   fadeInRight animated" data-animate-effect="fadeInRight" id="DA198">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2004</span>
@@ -147,7 +160,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry fadeInLeft animated" data-animate-effect="fadeInLeft" id="DA295">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2005</span>
@@ -162,7 +175,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInUp animated" data-animate-effect="fadeInTop">
+					         <article class="timeline-entry fadeInUp animated" data-animate-effect="fadeInTop" id="DA592">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2008</span>
@@ -177,7 +190,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry fadeInLeft animated" data-animate-effect="fadeInLeft" id="DA618">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2009</span>
@@ -192,7 +205,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry fadeInLeft animated" data-animate-effect="fadeInLeft" id="DA632">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2009</span>
@@ -207,7 +220,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry   fadeInLeft animated" data-animate-effect="fadeInLeft" id="DA778">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-10">
 					                  <span>2014</span>
@@ -222,7 +235,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+					         <article class="timeline-entry begin  " data-animate-effect="fadeInBottom">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-none">
 					               </div>
@@ -251,11 +264,44 @@
 	<!-- Owl carousel -->
 	<script src="../js/owl.carousel.min.js"></script>
 	<!-- Counters -->
-	<script src="../js/jquery.countTo.js"></script>
+	<!--<script src="../js/jquery.countTo.js"></script>-->
+	<!-- Offline search -->
+	<script src="../js/destaquesespeciais.js"></script>
 	
 	
 	<!-- MAIN JS -->
 	<script src="../js/main.js"></script>
+
+	<script>
+		$("#search-offline").click(function(e) {
+		  var word = $("#search-input").val().trim();
+		  var i = 0;
+
+		  if(word === "") {
+		  	alert("nope");
+		  } else {
+			
+			$("article").each(
+			   function() {
+			      $("#" + this.id).hide();
+			   }
+			);
+
+		  	result = idx.search(word);
+			for(i = 0; i<result.length;i++) { 	
+				$("#" + result[i].ref).show();
+			}
+		  }
+		});
+
+		$("#clean-offline").click(function(e) {
+  			$("article").each(
+			   function() {
+			      $("#" + this.id).show();
+			   }
+			);
+		});
+	</script>
 
 	</body>
 </html>
